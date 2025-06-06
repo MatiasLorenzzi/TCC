@@ -1,0 +1,102 @@
+ 
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CEDUP Renato Ramos da Silva - Cursos Técnicos e Formação Profissional">
+    <meta name="keywords" content="CEDUP, Cursos Técnicos, Educação, Formação Profissional">
+    <title>Wiktec</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+<header>
+    <h1>
+        <img src="img/ja.png" alt="Logo" class="logo"> Tecwiki
+    </h1>
+    <nav>
+        <ul>
+            <li class="menu-item">
+                <a href="quemSomos.html" id="quem-somos">Quem Somos</a>
+                <ul class="submenu">
+                    <li><a href="quemSomos.html">Quem somos</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="instituicoes">Instituições</a>
+                <ul class="submenu">
+                    <li><a href="https://ceduprenatoramos.com.br" target="_blank">Cedup</a></li>
+                    <li><a href="https://www.ifsc.edu.br" target="_blank">Ifsc</a></li>
+                    <li><a href="https://cedupindustrialdelages.com.br/" target="_blank">Industrial</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="./index.html" id="cursos">Cursos</a>
+                <ul class="submenu">
+                    <li><a href="./cursos.html">Cursos</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="./contato.html">Contato</a>
+                <ul class="submenu">
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main-content">
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="img/ii.jpg" alt="Imagem Tab2" class="carousel-image active">
+            <img src="img/hugo.webp" alt="Imagem Hugo" class="carousel-image">
+        </div>
+        <button class="carousel-button left">&lt;</button>
+        <button class="carousel-button right">&gt;</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Tecwiki Lages</p>
+</footer>
+
+<script>
+    const images = document.querySelectorAll('.carousel-image');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach(img => img.classList.remove('active'));
+        images[index].classList.add('active');
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        showImage(currentIndex);
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        showImage(currentIndex);
+    }
+
+    setInterval(nextImage, 5000);
+
+    document.querySelector('.carousel-button.left').addEventListener('click', prevImage);
+    document.querySelector('.carousel-button.right').addEventListener('click', nextImage);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
