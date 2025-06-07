@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos Subsequentes</title>
+    <title>Contato</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +12,7 @@
             margin: 0;
             padding: 20px;
         }
+        
         header {
             background-color: #000;
             padding: 40px;
@@ -21,13 +22,15 @@
             left: 0;
             right: 0;
             margin: 0;
-            border-bottom: 2px solid white; 
+            border-bottom: 2px solid white;
         }
+        
         header h1 {
             color: #fff;
             font-size: 38px;
             margin: 0;
         }
+        
         .menu-icon {
             position: absolute;
             top: 10px;
@@ -43,6 +46,7 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        
         .submenu {
             display: none;
             position: absolute;
@@ -54,15 +58,18 @@
             border-radius: 5px;
             z-index: 1000;
         }
+        
         .submenu a {
             color: white;
             text-decoration: none;
             display: block;
             margin: 5px 0;
         }
+        
         .submenu a:hover {
             text-decoration: underline;
         }
+        
         .descricao {
             background-color: black;
             padding: 15px;
@@ -76,6 +83,7 @@
             border: 2px solid white;
             color: white;
         }
+        
         .container {
             display: flex;
             justify-content: center;
@@ -83,6 +91,7 @@
             margin-top: 40px;
             flex-wrap: wrap;
         }
+        
         .coluna {
             background: black;
             padding: 15px;
@@ -92,31 +101,42 @@
             border: 2px solid white;
             color: white;
         }
+        
         .coluna h2 {
             text-align: center;
             color: white;
         }
+        
         ul {
             list-style-type: none;
             padding: 0;
         }
+        
         ul li {
             padding: 5px 0;
             font-size: 16px;
         }
+        
         a {
-            
             text-decoration: none;
             color: white;
         }
+        
         a:hover {
             text-decoration: underline;
         }
+        
         .icon {
             width: 16px;
             height: 16px;
             margin-right: 5px;
         }
+        
+        iframe {
+            border: 0;
+            border-radius: 8px;
+        }
+        
         footer {
             position: fixed;
             bottom: 0;
@@ -130,8 +150,8 @@
         }
     </style>
 </head>
-<body>
 
+<body>
     <header>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <h1>Contato</h1>
@@ -141,99 +161,76 @@
     </header>
 
     <div class="descricao">
-        <p><strong>Para mais informações!</strong> Siga os perfis oficiais no instagram ou contacte-os.</p>
+        <p><strong>Para mais informações!</strong> Siga os perfis oficiais no Instagram ou entre em contato pelos telefones abaixo.</p>
     </div>
 
     <div class="container">
+        <!-- Coluna 1: IFSC -->
         <div class="coluna">
-            <h2>Ifsc</h2>
+            <h2>IFSC</h2>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/ifsclages/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon" alt="Instagram">
-                        @ifsclages
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon" alt="Instagram"> @ifsclages
                     </a>
                 </li>
-
                 <li>
                     <a href="tel:+554932214215">
-                        <img src="img/tel-removebg-preview.png" class="icon" alt="Telefone">
-                        Telefone: (49) 3221-4215
+                        <img src="img/tel-removebg-preview.png" class="icon" alt="Telefone"> Telefone: (49) 3221-4215
                     </a>
                 </li>
-                   <li><strong>     Localização:</strong></li>
-     <li>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.4170022383644!2d-50.3369272!3d-27.8053113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e018b1f588926d%3A0x3e6066bf0fc8fdb1!2sIFSC+C%C3%A2mpus+Lages!5e0!3m2!1spt-BR!2sbr!4v1715825639810" 
-        width="250" 
-        height="200" 
-        style="border:0; border-radius:8px;" 
-        allowfullscreen="" 
-        loading="lazy">
-    </iframe>
-</li>
-
+                <li><strong>Localização:</strong></li>
+                <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.4170022383644!2d-50.3369272!3d-27.8053113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e018b1f588926d%3A0x3e6066bf0fc8fdb1!2sIFSC+C%C3%A2mpus+Lages!5e0!3m2!1spt-BR!2sbr!4v1715825639810"
+                        width="250" height="200" loading="lazy">
+          </iframe>
+                </li>
             </ul>
         </div>
 
+        <!-- Coluna 2: CEDUP -->
         <div class="coluna">
-            <h2>Cedup</h2>
+            <h2>CEDUP</h2>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/ceduprrslages/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon" alt="Instagram">
-                        @ceduprrslages
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon" alt="Instagram"> @ceduprrslages
                     </a>
                 </li>
                 <li>
                     <a href="tel:+554932898260">
-                        <img src="img/tel-removebg-preview.png" class="icon" alt="Telefone">
-                        Telefone: (49) 3289-8260
+                        <img src="img/tel-removebg-preview.png" class="icon" alt="Telefone"> Telefone: (49) 3289-8260
                     </a>
                 </li>
-
-                 <li><strong>     Localização:</strong></li>
-               <li>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.4170022383644!2d-50.3159482!3d-27.8223859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e01f3d2b4a6625%3A0x68ccd540df730600!2sAv.+Mal.+Castelo+Branco%2C+109+-+Universit%C3%A1rio%2C+Lages+-+SC%2C+88509-015!5e0!3m2!1spt-BR!2sbr!4v1715825639810" 
-                        width="250" 
-                        height="200" 
-                        style="border:0; border-radius:8px;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                <li><strong>Localização:</strong></li>
+                <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.4170022383644!2d-50.3159482!3d-27.8223859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e01f3d2b4a6625%3A0x68ccd540df730600!2sAv.+Mal.+Castelo+Branco%2C+109+-+Universit%C3%A1rio%2C+Lages+-+SC%2C+88509-015!5e0!3m2!1spt-BR!2sbr!4v1715825639810"
+                        width="250" height="200" loading="lazy">
+          </iframe>
                 </li>
             </ul>
         </div>
 
+        <!-- Coluna 3: Industrial -->
         <div class="coluna">
             <h2>Industrial</h2>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/industrialdelages/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon" alt="Instagram">
-                        @industrialdelages
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="icon" alt="Instagram"> @industrialdelages
                     </a>
                 </li>
-              
                 <li>
                     <a href="tel:+554932898257">
-                        <img src="img/tel-removebg-preview.png" class="icon" alt="Telefone">
-                        Telefone: (49) 3289-8257
+                        <img src="img/tel-removebg-preview.png" class="icon" alt="Telefone"> Telefone: (49) 3289-8257
                     </a>
-                </li>  
-                 <li><strong>     Localização:</strong></li>       
-<li>
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.4170022383644!2d-50.3241487!3d-27.8249711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e01f7847462261%3A0x4cd6ed4484b5d0d!2sCol%C3%A9gio+Industrial+De+Lages!5e0!3m2!1spt-BR!2sbr!4v1715825639810" 
-        width="250" 
-        height="200" 
-        style="border:0; border-radius:8px;" 
-        allowfullscreen="" 
-        loading="lazy">
-    </iframe>
-</li>
-
+                </li>
+                <li><strong>Localização:</strong></li>
+                <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.4170022383644!2d-50.3241487!3d-27.8249711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e01f7847462261%3A0x4cd6ed4484b5d0d!2sCol%C3%A9gio+Industrial+De+Lages!5e0!3m2!1spt-BR!2sbr!4v1715825639810"
+                        width="250" height="200" loading="lazy">
+          </iframe>
+                </li>
             </ul>
         </div>
     </div>
@@ -248,20 +245,6 @@
             submenu.style.display = submenu.style.display === "block" ? "none" : "block";
         }
     </script>
-
 </body>
+
 </html>
-   
-
-
- 
-
-  
-
-
-  
-
-
-
-
- 
